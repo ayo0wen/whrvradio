@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<title>WHRV Radio</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #20bcd8, #005fcc);
+    animation: gradientAnimation 10s linear infinite alternate;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .container {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+
+  .logo {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 2px 2px lightblue;
+  }
+
+  .tagline {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .player {
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">WHRV</div>
+  <div class="tagline">24/7 Music and Nationwide EAS Alerts</div>
+  <div class="tagline">WHRV Radio with EAS</div>
+  <div class="player">
+    <audio controls>
+      <source src="https://radiocdn.rootfilesys.dev/whrv-eas" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div class="tagline">WHRV Radio without EAS</div>
+  <div class="player">
+    <audio controls>
+      <source src="https://radiocdn.rootfilesys.dev/whrv" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+</body>
+</html>
